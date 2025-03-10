@@ -111,5 +111,17 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
+
+        system_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &trans  &trans  &kp F4  &trans                         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &sys_reset                     &sys_reset   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bootloader  &trans    &trans  &bootloader  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans       &trans    &trans  &trans       &trans  &trans  &trans
+            >;
+
+            label = "system";
+        };
     };
 };
