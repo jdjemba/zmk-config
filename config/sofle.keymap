@@ -16,6 +16,10 @@
 #define LOLEXTRA 4
 #define ADJUST 5
 
+&lt { tapping-term-ms = <300>; };
+
+&mt { tapping-term-ms = <300>; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -34,11 +38,11 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                               &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp DEL
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                                &kp Y           &kp U     &kp I      &kp O    &kp P     &kp BSPC
-&kp ESC    &kp A   &kp S   &kp D     &kp F      &kp G                                &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B     &kp C_MUTE    &none        &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                   &to LOLBASE   &kp LALT  &kp LCTRL  &kp LGUI  &lt NAV BSPC    &lt NUM SPACE  &mt RALT ENTER  &kp RGUI  &kp LALT   &none
+&kp GRAVE  &kp N1  &kp N2       &kp N3    &kp N4     &kp N5                                   &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp DEL
+&kp TAB    &kp Q   &kp W        &kp E     &kp R      &kp T                                    &kp Y           &kp U     &kp I      &kp O    &kp P     &kp BSPC
+&kp ESC    &kp A   &kp S        &kp D     &kp F      &kp G                                    &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z   &kp X        &kp C     &kp V      &kp B     &kp C_MUTE      &none          &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                   &to LOLBASE  &kp LALT  &kp LCTRL  &kp LGUI  &lt NAV BSPC    &lt NUM SPACE  &mt RALT ENTER  &kp RGUI  &kp LALT   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -75,11 +79,11 @@
         lol_base_layer {
             display-name = "lol  Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                             &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp DEL
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &kp T                              &kp Y           &kp U     &kp I      &kp O    &kp P     &kp BSPC
-&kp GRAVE  &kp A   &kp S   &kp D     &kp F      &kp G                              &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V      &kp B   &kp C_MUTE    &none        &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                   &to BASE   &kp LALT  &kp LCTRL  &mo LOLEXTRA   &kp SPACE     &lt NUM SPACE  &mt RALT ENTER  &kp RGUI  &kp RALT   &none
+&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                     &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp DEL
+&kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T                                      &kp Y           &kp U     &kp I      &kp O    &kp P     &kp BSPC
+&kp GRAVE  &kp A   &kp S     &kp D     &kp F      &kp G                                      &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B         &kp C_MUTE    &none          &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                   &to BASE  &kp LALT  &kp LCTRL  &mo LOLEXTRA  &kp SPACE     &lt NUM SPACE  &mt RALT ENTER  &kp RGUI  &kp RALT   &none
             >;
 
             sensor-bindings =
